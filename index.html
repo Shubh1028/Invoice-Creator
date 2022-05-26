@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>Invoice Creator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Invoice Creator</p>
+            <span>Thanks for choosing GoodCorp, LLC!</span>
+        </div>
+        <div class="section">
+            <div class="button-box">
+                <button>Wash Car : $10</button>
+                <button>Mow Lawn: $20</button>
+                <button>Pull Weeds: $30</button>
+            </div>
+            <div class="task-total-box">
+                <span>TASK</span>
+                <span>TOTAL</span>
+            </div>
+            <div>
+                <div class="task-total-detail-box">
+                    <div>
+                    <span>Wash Car</span> <span class="remove-btn">Remove</span>
+                    </div>
+                    <div>
+                        <span style="color: #918E9B">$</span><span>10</span>
+                    </div>
+                </div>
+                <div class="task-total-detail-box">
+                    <div>
+                    <span>Mow Lawn</span> <span class="remove-btn">Remove</span>
+                    </div>
+                    <div>
+                        <span style="color: #918E9B">$</span><span>20</span>
+                    </div>
+                </div>
+                <div class="task-total-detail-box">
+                    <div>
+                    <span>Pull Weeds</span> <span class="remove-btn">Remove</span>
+                    </div>
+                    <div>
+                        <span style="color: #918E9B">$</span><span>30</span>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="task-total-box">
+                <span>NOTES</span>
+                <span>TOTAL AMOUNT</span>
+            </div>
+            <div class="task-total-detail-box">
+                <div>
+                <span id = "pay-mode-text">We accept cash, credit card or Paypal</span>
+                </div>
+                <div>
+                    <span >$</span><span>10</span>
+                </div>
+            </div>
+            <div class="last-button">
+            <button><i class="fa fa-solid fa-envelope"></i>Send Invoice</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
