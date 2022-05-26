@@ -90,7 +90,8 @@ and (min-device-width : 270px)
 and (max-device-width : 600px)  {
     
 .container{ 
-    width: 97%;
+    width: 100%;
+    margin-top: 0px;
 }
 .section {
     padding: 1rem;
@@ -105,7 +106,8 @@ and (min-device-width : 600px)
 and (max-device-width : 1000px)  
     {
         .container{ 
-            width: 97%;
+            width: 100%;
+            margin-top: 0px;
         }
         .section {
             padding: 1rem;
