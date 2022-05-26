@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     height: 619px;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .header {
     background-color: #3A69D2;
@@ -90,8 +90,7 @@ and (min-device-width : 270px)
 and (max-device-width : 600px)  {
     
 .container{ 
-    width: 99%;
-    margin-top: 1%;
+    width: 97%;
 }
 .section {
     padding: 1rem;
@@ -106,7 +105,7 @@ and (min-device-width : 600px)
 and (max-device-width : 1000px)  
     {
         .container{ 
-            width: 99%;
+            width: 97%;
             margin-top: 1%;
         }
         .section {
