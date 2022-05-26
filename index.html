@@ -27,31 +27,31 @@
         </div>
         <div class="section">
             <div class="button-box">
-                <button>Wash Car : $10</button>
-                <button>Mow Lawn: $20</button>
-                <button>Pull Weeds: $30</button>
+                <button id="wash-car" onClick="reply_click(event)">Wash Car : $10</button>
+                <button id="mow-lawn" onClick="reply_click(event)">Mow Lawn: $20</button>
+                <button id="pull-weed" onClick="reply_click(event)">Pull Weeds: $30</button>
             </div>
             <div class="task-total-box">
                 <span>TASK</span>
                 <span>TOTAL</span>
             </div>
-            <div>
-                <div class="task-total-detail-box">
+            <div id = "text-content">
+                <!-- <div class="task-total-detail-box" id = "text-content">
                     <div>
-                    <span>Wash Car</span> <span class="remove-btn">Remove</span>
+                    <span id="wash-car-text"></span> <span class="remove-btn"></span>
                     </div>
                     <div>
-                        <span style="color: #918E9B">$</span><span>10</span>
+                        <span style="color: #918E9B"></span><span id="wash-car-price"></span>
                     </div>
                 </div>
-                <div class="task-total-detail-box">
+                 <div class="task-total-detail-box" id="text-content2">
                     <div>
                     <span>Mow Lawn</span> <span class="remove-btn">Remove</span>
                     </div>
                     <div>
                         <span style="color: #918E9B">$</span><span>20</span>
                     </div>
-                </div>
+                </div> 
                 <div class="task-total-detail-box">
                     <div>
                     <span>Pull Weeds</span> <span class="remove-btn">Remove</span>
@@ -59,19 +59,19 @@
                     <div>
                         <span style="color: #918E9B">$</span><span>30</span>
                     </div>
-                </div>
+                </div>  -->
             </div>
             <div class="line"></div>
             <div class="task-total-box">
                 <span>NOTES</span>
                 <span>TOTAL AMOUNT</span>
             </div>
-            <div class="task-total-detail-box">
+            <div class="task-total-detail-box" id = "total-amount">
                 <div>
                 <span id = "pay-mode-text">We accept cash, credit card or Paypal</span>
                 </div>
                 <div>
-                    <span >$</span><span>10</span>
+                    <span >$</span><span id = "total-value"></span>
                 </div>
             </div>
             <div class="last-button">
@@ -79,5 +79,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
