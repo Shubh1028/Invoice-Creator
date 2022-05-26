@@ -11,8 +11,6 @@ let count3 = 0;
 let total = 0;
 
 
-
-
 function reply_click(e) {
     if(e.target.id === "wash-car") {
         count1++;
@@ -35,7 +33,7 @@ function reply_click(e) {
   function printItem(type,price,id, id2) {
       textContent.innerHTML += `<div class="task-total-detail-box" id = "${id2}">
       <div>
-      <span id="wash-car-text">${type}</span> <span class="remove-btn" id="${id}" onclick="remove(event)">Remove</span>
+      <span id="wash-car-text">${type}</span> <span class="remove-btn" id="${id}" onclick="remove(event, ${price})">Remove</span>
       </div>
       <div>
           <span style="color: #918E9B">$</span><span id="wash-car-price">${price}</span>
@@ -49,28 +47,43 @@ function reply_click(e) {
   function calcTotal(price) {
       total += price;
       totalValue.textContent = total;
+      return total;
   }
 
-  function remove(e,) {
+
+  function remTotal(price) {
+      total -= price;
+      totalValue.textContent = total;
+  }
+
+  function remove(e,price) {
     if(e.target.id === "remove-wash") {
         let removeWash = document.getElementById("textContent1");
         removeWash.remove();
-        // total = total -10;
+        remTotal(price);
         count1 = 0;
-    
     }
     if(e.target.id === "remove-mow") {
         let removeWash = document.getElementById("textContent2");
         removeWash.remove();
-        // totalValue.textContent -=20; 
+        remTotal(price);
         count2 = 0;
     }
     if(e.target.id === "remove-pull") {
         let removeWash = document.getElementById("textContent3");
         removeWash.remove();
-        // totalValue.textContent -=30; 
+        remTotal(price);
         count3 = 0;
     }
 
   }
+
+  function remTotal(price) {
+    total -= price;
+    totalValue.textContent = total;
+}
+
+function resetButton() {
+window.location.reload();
+}
 

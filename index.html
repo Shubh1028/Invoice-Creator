@@ -12,10 +12,6 @@
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
   />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="styles.css">
     <title>Invoice Creator</title>
 </head>
@@ -36,30 +32,7 @@
                 <span>TOTAL</span>
             </div>
             <div id = "text-content">
-                <!-- <div class="task-total-detail-box" id = "text-content">
-                    <div>
-                    <span id="wash-car-text"></span> <span class="remove-btn"></span>
-                    </div>
-                    <div>
-                        <span style="color: #918E9B"></span><span id="wash-car-price"></span>
-                    </div>
-                </div>
-                 <div class="task-total-detail-box" id="text-content2">
-                    <div>
-                    <span>Mow Lawn</span> <span class="remove-btn">Remove</span>
-                    </div>
-                    <div>
-                        <span style="color: #918E9B">$</span><span>20</span>
-                    </div>
-                </div> 
-                <div class="task-total-detail-box">
-                    <div>
-                    <span>Pull Weeds</span> <span class="remove-btn">Remove</span>
-                    </div>
-                    <div>
-                        <span style="color: #918E9B">$</span><span>30</span>
-                    </div>
-                </div>  -->
+        
             </div>
             <div class="line"></div>
             <div class="task-total-box">
@@ -71,11 +44,11 @@
                 <span id = "pay-mode-text">We accept cash, credit card or Paypal</span>
                 </div>
                 <div>
-                    <span >$</span><span id = "total-value"></span>
+                    <span >$</span><span id = "total-value">0</span>
                 </div>
             </div>
-            <div class="last-button">
-            <button><i class="fa fa-solid fa-envelope"></i>Send Invoice</button>
+            <div class="last-button" >
+            <button onclick="resetButton()"><i class="fa fa-solid fa-envelope"></i>Send Invoice</button>
             </div>
         </div>
     </div>

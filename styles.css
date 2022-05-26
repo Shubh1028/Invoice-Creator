@@ -3,11 +3,16 @@
     padding: 0;
     font-family: "Inter", sans-serif;
 }
+body {
+    background-color: #73C2FB;
+
+}
 .container{
     width: 35%;
     margin: 0 auto;
     height: 619px;
     box-sizing: border-box;
+    margin-top: 20px;
 }
 .header {
     background-color: #3A69D2;
